@@ -3,17 +3,17 @@ export default function Home() {
 
   const cards =[
     {
-    image: "/Heart.png",
+    image: "/Heart2.png",
     title: "Save moments of your life",
-    description: "Watch how you change ad grow"
+    description: "Watch how you change and grow"
     },
     {
-    image: "/lock.png",
+    image: "/Lock2.png",
     title: "Keep your thoughts and ideas private",
     description: "The diary is for your eyes only"
     },
     {
-    image: "/song.png",
+    image: "/Song2.png",
     title: "Add melody to show the vibe",
     description: "Choice to add songs to your enteries"
     },
@@ -26,14 +26,14 @@ export default function Home() {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="flex items-center bg-rose-400 rounded-2xl w-[300px] p-2 gap-4 shadow-xs shadow-rose-900"
+            className="flex items-center bg-rose-400 rounded-2xl w-[320px] py-2  gap-4 shadow-xs shadow-rose-900"
           >
-            <img src={card.image} width={70} className="rounded-full" />
+            <img src={card.image} width={50} className="rounded-full ml-2" />
             <div>
-              <h1 className="text-lg font-semibold text-gray-800">
+              <h1 className="text-lg font-semibold text-gray-800 ">
                 {card.title}
               </h1>
-              <p className="text-sm text-white">
+              <p className="text-sm text-white ">
                 {card.description}
               </p>
             </div>

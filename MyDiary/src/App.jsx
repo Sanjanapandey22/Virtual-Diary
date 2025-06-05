@@ -4,7 +4,7 @@ import Home from './Components/homepage/Home';
 
 function App() {
   return (
-    <div className="min-h-screen bg-rose-100 border-0  m-50 mt-0 rounded-xl">
+    <div className="min-h-screen bg-gradient-to-br from-rose-300 to-rose-200 via-rose-100 border-0  m-50 mt-0 rounded-xl">
       <Navbar />
       <Home />
     </div>
