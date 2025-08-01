@@ -1,15 +1,20 @@
 import './App.css';
-import Navbar from './Components/homepage/Navbar';
+import { Routes, Route } from 'react-router-dom';
 import Home from './Components/homepage/Home';
+import NoteForm from './Components/homepage/NoteForm';
+import { NoteProvider } from './contexts/NoteContext';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-300 to-rose-200 via-rose-100 border-0  m-50 mt-0 rounded-xl">
-      <Navbar />
-      <Home />
-    </div>
+    <NoteProvider>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/note' element={<NoteForm />} />
+      </Routes>
+    </NoteProvider>
   );
 }
 
-export default App;
 
+
+export default App;
